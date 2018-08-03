@@ -1,0 +1,25 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+	align-items: justify;
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		width: calc((100% / 12) * #{$i});
+	}
+}
+
+@each $selector in $media-query-size-selectors {
+	$i: index($media-query-size-selectors, $selector);
+
+	@for $j from 1 through 12 {
+		.col-#{nth($media-query-size-selectors, $i) + - + $j} {
+			width: 100%;
+
+			@media (min-width: #{nth($media-query-break-points, $i)}) {
+				width: calc((100% / 12) * #{$j});
+			}
+		}
+	}
+}
