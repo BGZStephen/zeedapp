@@ -1,0 +1,67 @@
+@import '../../../../styles/variables/index';
+
+#top-navigation {
+  background: $brand-blue;
+
+  > .container-flex {
+    flex-direction: column;
+
+    @media(min-width: $screen-lg) {
+      flex-direction: row;
+    }
+  }
+  
+  .logo-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    i {
+      color: white;
+      font-size: 18px;
+
+      @media(min-width: $screen-lg) {
+        display: none;
+      }
+    }
+
+    @media(min-width: $screen-lg) {
+      width: 35%;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      color: white;
+      padding: 5px 20px;
+
+      &.active,
+      &:hover,
+      &:active {
+        background: white;
+        color: black;
+
+        @media(min-width: $screen-lg) {
+          background: none;
+          color: white;
+        }
+      }
+
+      @media(min-width: $screen-lg) {
+        font-size: 14px;
+        margin-right: 10px;
+        padding: 10px;
+      }
+    }
+
+    @media(min-width: $screen-lg) {
+      align-items: center;
+      display: flex;
+      width: 65%;
+    }
+  }
+
+}

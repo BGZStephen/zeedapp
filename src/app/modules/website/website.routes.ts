@@ -4,9 +4,7 @@ import * as components from './components';
 
 const WEBSITE_ROUTES: Routes = [
   {
-    path: '', component: components.ViewWrapper, children: [
-      { path: '', component: components.HomePage }
-    ]
+    path: '', component: components.HomePage 
   }
 ]
 
