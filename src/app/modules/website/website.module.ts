@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import * as components from './components';
 
+import { websiteRoutes } from './website.routes'
+
 @NgModule({
   declarations: [
     components.ViewWrapper,
     components.TopNavigation,
+    components.HomePage,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    websiteRoutes
   ],
   providers: [],
+  bootstrap: [components.ViewWrapper]
 })
 export class WebsiteModule { }
