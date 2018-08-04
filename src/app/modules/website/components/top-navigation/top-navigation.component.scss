@@ -27,7 +27,7 @@
     }
 
     @media(min-width: $screen-lg) {
-      width: 35%;
+      width: 30%;
     }
   }
 
@@ -37,24 +37,46 @@
     transition: 0.3s ease all;
 
     li {
-      color: white;
+      cursor: pointer;
       padding: 5px 20px;
+      position: relative;
+      
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 8px;
+        transition: 0.3s ease all;
+        border-bottom: 2px solid white;
+        z-index: 5;
+        width: 0;
+      }
 
       &.active,
       &:hover,
       &:active {
         background: white;
         color: black;
+        
 
         @media(min-width: $screen-lg) {
           background: none;
           color: white;
+
+          &::after {
+            width: 90%;
+          }
         }
       }
 
       @media(min-width: $screen-lg) {
         font-size: 14px;
-        margin-right: 10px;
+        margin-right: 15px;
         padding: 10px;
       }
     }
@@ -63,7 +85,7 @@
       align-items: center;
       display: flex;
       height: auto;
-      width: 65%;
+      width: 70%;
     }
   }
 

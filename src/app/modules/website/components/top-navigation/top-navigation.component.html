@@ -5,14 +5,8 @@
       <i class="fa fa-bars" (click)="toggleMobileMenuVisible()"></i>
     </div>
     <ul>
-      <li>Home</li>
-      <li>Features</li>
-      <li>Screenshot</li>
-      <li>Pricing</li>
-      <li>Team</li>
-      <li>Download</li>
-      <li>Blog</li>
-      <li>Contact</li>
+      <li *ngFor="let menuItem of menuItems">
+        <a href="{{menuItem.anchor}}">{{menuItem.label}}</a></li>
     </ul>
   </div>
 </div>

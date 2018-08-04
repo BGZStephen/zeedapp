@@ -7,6 +7,40 @@ import { Component } from "@angular/core";
 })
 export class TopNavigation {
   mobileMenuVisible: boolean = false;
+  menuItems: Array<any> = [
+    {
+      label: "Home",
+      anchor: "#Home"
+    },
+    {
+      label: "Features",
+      anchor: "#Features"
+    },
+    {
+      label: "Screenshot",
+      anchor: "#Screenshot"
+    },
+    {
+      label: "Pricing",
+      anchor: "#Pricing"
+    },
+    {
+      label: "Team",
+      anchor: "#Team"
+    },
+    {
+      label: "Download",
+      anchor: "#Download"
+    },
+    {
+      label: "Blog",
+      anchor: "#Blog"
+    },
+    {
+      label: "Contact",
+      anchor: "#Contact"
+    },
+  ]
 
   toggleMobileMenuVisible():void {
     this.mobileMenuVisible = !this.mobileMenuVisible;
@@ -24,7 +58,7 @@ export class TopNavigation {
     const topNav = document.getElementById('top-navigation');
     const menuUl = topNav.getElementsByTagName('ul')[0];
     const liHeight = 35;
-    const maxUlHeight = liHeight * 8;
+    const maxUlHeight = liHeight * this.menuItems.length;
 
     if (!this.mobileMenuVisible) {
       menuUl.removeAttribute('style');
