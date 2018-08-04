@@ -1,0 +1,23 @@
+@import '../../../../styles/variables/index';
+
+#section-intro {
+  $backrgound-color-height: 380px;
+  background-color: #eee;
+  background-image:         linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* W3C */
+  background-image:    -moz-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* FF3.6+ */
+  background-image: -webkit-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* Chrome10+,Safari5.1+ */
+
+  @media(min-width: $screen-md) {
+    $backrgound-color-height: 580px;
+    background-image:         linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* W3C */
+    background-image:    -moz-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* FF3.6+ */
+    background-image: -webkit-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* Chrome10+,Safari5.1+ */
+  }
+
+  @media(min-width: $screen-lg) {
+    $backrgound-color-height: 740px;
+    background-image:         linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* W3C */
+    background-image:    -moz-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* FF3.6+ */
+    background-image: -webkit-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* Chrome10+,Safari5.1+ */
+  }
+}
