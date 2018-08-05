@@ -19,6 +19,13 @@
   }
 
   &.container-xl {
-    max-width: $screen-lg;
+    max-width: $screen-xl;
+  }
+}
+
+.image-container {
+  img {
+    display: block;
+    width: 100%;
   }
 }

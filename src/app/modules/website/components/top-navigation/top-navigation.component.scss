@@ -89,6 +89,7 @@
     @media(min-width: $screen-lg) {
       align-items: center;
       display: flex;
+      justify-content: space-between;
       height: auto;
       width: 70%;
     }

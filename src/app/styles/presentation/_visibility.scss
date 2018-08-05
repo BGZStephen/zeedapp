@@ -1,0 +1,27 @@
+.visible-sm {
+  display: none;
+  @media(min-width: $screen-sm) {
+    display: initial;
+  }
+}
+
+.visible-md {
+  display: none;
+  @media(min-width: $screen-md) {
+    display: initial;
+  }
+}
+
+.visible-lg {
+  display: none;
+  @media(min-width: $screen-lg) {
+    display: initial;
+  }
+}
+
+.visible-xl {
+  display: none;
+  @media(min-width: $screen-xl) {
+    display: initial;
+  }
+}
