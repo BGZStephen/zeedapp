@@ -1,0 +1,78 @@
+@import '../../../../styles/variables/index';
+
+#section-about {
+  padding: 60px 20px 30px 20px;
+
+  .text-container {
+    margin-bottom: 60px;
+    h3 {
+      font-weight: 500;
+      font-size: 28px;
+    }
+
+    p {
+      color: $font-grey;
+    }
+
+    text-align: center;
+
+    .divider {
+      margin: 15px 0;
+      position: relative;
+
+      &::after {
+        content: '';
+        background: $brand-purple;
+        border-radius: 50%;
+        position: absolute;
+        padding: 6px;
+        top: -4px;
+        left: 50%;
+        z-index: 100;
+        transform: translateX(-50%);
+      }
+
+      hr {
+        border-top: 3px solid $brand-purple;
+        margin: 0 auto;
+        width: 140px;
+      }
+    }
+  }
+
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .text-container {
+      text-align: left;
+
+      p {
+        color: $font-grey;
+        font-size: 16px;
+        line-height: 1.8em;
+        margin-bottom: 25px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .image-container {
+    img {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+
+  @media(min-width: $screen-md) {
+    padding: 60px 25px 90px 25px;
+  }
+
+  @media(min-width: $screen-lg) {
+    padding: 60px 35px 90px 35px;
+  }
+}

@@ -6,10 +6,11 @@
   background-image:         linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* W3C */
   background-image:    -moz-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* FF3.6+ */
   background-image: -webkit-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* Chrome10+,Safari5.1+ */
+  padding: 0 20px;
 
   .text-container {
     color: white;
-    padding: 40px 25px;
+    padding: 40px 0;
 
     h2 {
       font-weight: 500;
@@ -64,7 +65,7 @@
 
   .panel {
     border: 1px solid #EEEEEE;
-    margin: 10px 20px;
+    margin: 10px 0;
     padding: 20px;
     
     &.panel-white {
@@ -105,6 +106,10 @@
       padding: 0;
       text-align: center;
     }
+
+    @media(min-width: $screen-md) {
+      margin: 10px 20px;
+    }
   }
 
   @media(min-width: $screen-md) {
@@ -112,7 +117,7 @@
     background-image:         linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* W3C */
     background-image:    -moz-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* FF3.6+ */
     background-image: -webkit-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* Chrome10+,Safari5.1+ */
-    padding: 120px 25px;
+    padding: 120px 25px 60px 25px;
   }
 
   @media(min-width: $screen-lg) {
@@ -120,6 +125,6 @@
     background-image:         linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* W3C */
     background-image:    -moz-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* FF3.6+ */
     background-image: -webkit-linear-gradient(to bottom, $brand-blue 0%, $brand-blue $backrgound-color-height, white $backrgound-color-height); /* Chrome10+,Safari5.1+ */
-    padding: 170px 35px;
+    padding: 170px 35px 60px 35px;
   }
 }
