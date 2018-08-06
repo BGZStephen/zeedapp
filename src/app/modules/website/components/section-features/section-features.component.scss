@@ -1,0 +1,81 @@
+@import '../../../../styles/variables/index';
+
+#section-features {
+  background: #F9F9F9;
+  padding: 60px 20px;
+
+  .text-container {
+    margin-bottom: 60px;
+    h3 {
+      font-weight: 500;
+      font-size: 28px;
+    }
+
+    p {
+      color: $font-grey;
+    }
+
+    text-align: center;
+
+    .divider {
+      margin: 15px 0;
+      position: relative;
+
+      &::after {
+        content: '';
+        background: $brand-purple;
+        border-radius: 50%;
+        position: absolute;
+        padding: 6px;
+        top: -4px;
+        left: 50%;
+        z-index: 100;
+        transform: translateX(-50%);
+      }
+
+      hr {
+        border-top: 3px solid $brand-purple;
+        margin: 0 auto;
+        width: 140px;
+      }
+    }
+  }
+
+  .center-container {
+    display: none;
+    .image-container {
+      img {
+        margin: 0 auto;
+        width: 70%;
+      }
+    }
+    
+    @media(min-width: $screen-lg) {
+      display: block;
+    }
+  }
+
+  .features-container {
+    .feature {
+      .image-container {
+        max-width: 60px;
+      }
+    }
+
+    &.align-right {
+      .text-container {
+        padding: 0 20px 0 0;
+        text-align: right;
+      }
+    }
+    
+    .text-container {
+      padding: 0 0 0 20px;
+      text-align: left;
+
+      h5 {
+        font-size: 24px;
+      }
+    }
+  }
+}
