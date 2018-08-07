@@ -42,18 +42,15 @@ export class SectionCounters implements OnInit {
   countersTriggered: boolean = false;
 
   ngOnInit() {
-    document.addEventListener('scroll', event => {
+    document.addEventListener('scroll', () => {
       if (this.countersTriggered) {
         return;
       }
-
       
       if (window.pageYOffset + window.innerHeight > document.getElementById('section-counters').offsetTop) {
         this.startCounterAnimation();
         this.countersTriggered = true;
       }
-
-      document.removeEventListener('scroll', function () {});
     })
   }
 

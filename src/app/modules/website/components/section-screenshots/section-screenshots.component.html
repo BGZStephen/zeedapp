@@ -1,0 +1,22 @@
+<div id="section-screenshots">
+  <div class="container container-xl">
+    <div class="text-container">
+      <h3>Screenshots</h3>
+      <div class="divider">
+        <hr>
+      </div>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit</p>
+    </div>
+    <div class="image-slider-wrapper">
+      <div id="image-slider">
+        <div class="slides-container" [ngStyle]="slidesContainerWidth()">
+          <div class="slide" *ngFor="let slide of imageSlides" [ngStyle]="slideWidth()">
+            <div class="image-container">
+              <img src="{{slide.imageUrl}}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
