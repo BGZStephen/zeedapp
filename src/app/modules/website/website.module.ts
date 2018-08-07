@@ -13,6 +13,7 @@ import { websiteRoutes } from './website.routes'
     components.SectionIntro,
     components.SectionAbout,
     components.SectionFeatures,
+    components.SectionCounters,
   ],
   imports: [
     BrowserModule,
