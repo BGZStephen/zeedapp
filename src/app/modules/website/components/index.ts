@@ -6,3 +6,4 @@ export { SectionAbout } from './section-about/section-about.component';
 export { SectionFeatures } from './section-features/section-features.component';
 export { SectionCounters } from './section-counters/section-counters.component';
 export { SectionScreenshots } from './section-screenshots/section-screenshots.component';
+export { SectionTestimonials } from './section-testimonials/section-testimonials.component';

@@ -1,0 +1,27 @@
+<div id="section-testimonials" class="section-container">
+  <div class="container container-xl">
+    <div class="text-container header-with-divider">
+      <h3>What our clients say</h3>
+      <div class="divider">
+        <hr>
+      </div>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit</p>
+    </div>
+    <div id="testimonial-slider">
+      <div class="slides-container" [ngStyle]="slidesContainerWidth()">
+        <div class="slide" *ngFor="let testimonial of testimonials" [ngStyle]="slideWidth()">
+          <div class="testimonial-container">
+            <div class="image-container">
+              <img src="{{testimonial.imageUrl}}">
+            </div>
+            <div class="text-container border-purple">
+              <h5>{{testimonial.name}}</h5>
+              <span>{{testimonial.title}}</span>
+              <p>{{testimonial.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
