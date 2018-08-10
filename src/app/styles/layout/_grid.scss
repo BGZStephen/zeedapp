@@ -4,6 +4,10 @@
 	align-items: justify;
 }
 
+.col {
+  width: 100%;
+}
+
 @for $i from 1 through 12 {
 	.col-#{$i} {
 		width: calc((100% / 12) * #{$i});
@@ -14,8 +18,7 @@
 	$i: index($media-query-size-selectors, $selector);
 
 	@for $j from 1 through 12 {
-		.col-#{nth($media-query-size-selectors, $i) + - + $j} {
-			width: 100%;
+		.col-#{nth($media-query-size-selectors, $i)}-#{$j} {
 
 			@media (min-width: #{nth($media-query-break-points, $i)}) {
 				width: calc((100% / 12) * #{$j});

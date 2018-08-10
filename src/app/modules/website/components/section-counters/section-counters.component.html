@@ -1,7 +1,7 @@
 <div id="section-counters" class="section-container">
   <div class="container container-xl">
     <div class="row">
-      <div class="col-sm-3 counter" *ngFor="let counter of counters">
+      <div class="col col-sm-3 counter" *ngFor="let counter of counters">
         <i class="{{counter.icon}}"></i>
         <span>{{counter.number | number : '1.0-0'}}{{counter.suffix}}</span>
         <p>{{counter.label}}</p>
