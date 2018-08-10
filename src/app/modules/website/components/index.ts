@@ -9,3 +9,4 @@ export { SectionScreenshots } from './section-screenshots/section-screenshots.co
 export { SectionTestimonials } from './section-testimonials/section-testimonials.component';
 export { SectionDemo } from './section-demo/section-demo.component';
 export { SectionPricing } from './section-pricing/section-pricing.component';
+export { SectionTeam } from './section-team/section-team.component';

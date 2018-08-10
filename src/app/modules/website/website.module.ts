@@ -18,6 +18,7 @@ import { websiteRoutes } from './website.routes'
     components.SectionTestimonials,
     components.SectionDemo,
     components.SectionPricing,
+    components.SectionTeam,
   ],
   imports: [
     BrowserModule,
