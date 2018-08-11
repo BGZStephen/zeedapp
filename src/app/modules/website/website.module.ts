@@ -19,6 +19,7 @@ import { websiteRoutes } from './website.routes'
     components.SectionDemo,
     components.SectionPricing,
     components.SectionTeam,
+    components.SectionAppDownload,
   ],
   imports: [
     BrowserModule,

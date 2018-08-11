@@ -28,9 +28,26 @@
     }
 
     hr {
+      border: none;
       border-top: 3px solid $brand-purple;
       margin: 0 auto;
       width: 140px;
+    }
+  }
+
+  &.header-with-divider-white {
+    h3, p {
+      color: white;
+    }
+
+    .divider {
+      &::after {
+        background: white;
+      }
+    }
+
+    hr {
+      border-top: 3px solid white;
     }
   }
 }

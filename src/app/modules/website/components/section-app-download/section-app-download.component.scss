@@ -1,0 +1,48 @@
+@import '../../../../styles/variables/index';
+
+#section-app-download {
+  background-image: linear-gradient(rgba($brand-blue, .9), rgba($brand-blue, .9)), url('/assets/images/bg/ach-bg-img.jpg');
+  background-size: cover;
+  color: white;
+
+  .download-stores-container {
+    text-align: center;
+
+    .download-store {
+      padding: 0 20px;
+      button {
+        width: 100%;
+        padding: 8px 55px;
+        background: none;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 2px solid white;
+        transition: 0.3s ease all;
+        margin-bottom: 25px;
+  
+        i {
+          margin-right: 10px;
+        }
+  
+        &:hover {
+          background: white;
+          color: $brand-blue;
+        }
+  
+        
+        @media(min-width: $screen-lg) {
+          margin-bottom: 0;
+          width: auto;
+        }
+      }
+
+      &:last-of-type {
+        button {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
