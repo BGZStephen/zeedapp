@@ -11,3 +11,4 @@ export { SectionDemo } from './section-demo/section-demo.component';
 export { SectionPricing } from './section-pricing/section-pricing.component';
 export { SectionTeam } from './section-team/section-team.component';
 export { SectionAppDownload } from './section-app-download/section-app-download.component';
+export { SectionNews } from './section-news/section-news.component';

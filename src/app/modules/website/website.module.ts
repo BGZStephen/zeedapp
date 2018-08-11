@@ -20,6 +20,7 @@ import { websiteRoutes } from './website.routes'
     components.SectionPricing,
     components.SectionTeam,
     components.SectionAppDownload,
+    components.SectionNews,
   ],
   imports: [
     BrowserModule,
