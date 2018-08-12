@@ -1,0 +1,25 @@
+@import '../../../../styles/variables/index';
+
+#section-customers {
+  background: #F7F7F7;
+  
+  .customers-container {
+    $customer-padding: 20px;
+
+    .customer {
+      padding: 10px $customer-padding;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: $customer-padding;
+        right: $customer-padding;
+        bottom: 0;
+        border-top: 1px solid $brand-purple;
+        border-bottom: 1px solid $brand-purple;
+      }
+    }
+  }
+}

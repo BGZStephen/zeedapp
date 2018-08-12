@@ -21,6 +21,7 @@ import { websiteRoutes } from './website.routes'
     components.SectionTeam,
     components.SectionAppDownload,
     components.SectionNews,
+    components.SectionCustomers,
   ],
   imports: [
     BrowserModule,
