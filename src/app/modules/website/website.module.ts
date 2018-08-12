@@ -10,6 +10,7 @@ import { websiteRoutes } from './website.routes'
     components.ViewWrapper,
     components.TopNavigation,
     components.HomePage,
+    components.Footer,
     components.SectionIntro,
     components.SectionAbout,
     components.SectionFeatures,

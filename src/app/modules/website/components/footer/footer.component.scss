@@ -1,0 +1,13 @@
+@import '../../../../styles/variables/index';
+
+#footer {
+  background: $brand-blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  p {
+    display: block;
+    font-size: 14px;
+  }
+}
