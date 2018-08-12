@@ -23,6 +23,7 @@ import { websiteRoutes } from './website.routes'
     components.SectionAppDownload,
     components.SectionNews,
     components.SectionCustomers,
+    components.SectionContact,
   ],
   imports: [
     BrowserModule,

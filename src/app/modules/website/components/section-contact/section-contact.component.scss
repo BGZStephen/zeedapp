@@ -1,0 +1,77 @@
+@import '../../../../styles/variables/index';
+
+#section-contact {
+  .contact-form-container {
+    margin-bottom: 45px;
+    
+    form {
+      button {
+        background: $brand-blue;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 10px 40px;
+        transition: 0.3s ease all;
+  
+        &:hover {
+          background: darken($brand-blue, 10%);
+        }
+      }
+    }
+
+    @media(min-width: $screen-md) {
+      padding-right: 25px;
+      margin-bottom: 0px;
+    }
+
+  }
+
+  .contact-details-container {
+    
+    @media(min-width: $screen-md) {
+      padding-left: 25px;
+    }
+  }
+
+  .contact-details {
+    color: $font-grey;
+    margin-bottom: 15px;
+  }
+
+  .icon-container {
+    text-align: center;
+  }
+
+  i {
+    color: $brand-blue;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 5px;
+  }
+
+  .social-icons-container {
+    display: flex;
+    
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      
+      i {
+        background: $brand-blue;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 18px;
+        transition: 0.3s ease all;
+
+        &:hover {
+          background: darken($brand-blue, 10%);
+        }
+      }
+    }
+  }
+}
