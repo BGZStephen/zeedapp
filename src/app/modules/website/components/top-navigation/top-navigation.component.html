@@ -5,8 +5,8 @@
       <i class="fa fa-bars" (click)="toggleMobileMenuVisible()"></i>
     </div>
     <ul>
-      <li *ngFor="let menuItem of menuItems">
-        <a href="{{menuItem.anchor}}">{{menuItem.label}}</a>
+      <li *ngFor="let menuItem of menuItems" (click)="scrollToAnchor(menuItem.anchor)" class="{{this.menuItemActive.label === menuItem.label ? 'active' : ''}}">
+        <a>{{menuItem.label}}</a>
       </li>
     </ul>
   </div>
